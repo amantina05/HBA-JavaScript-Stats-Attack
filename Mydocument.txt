@@ -1,0 +1,30 @@
+</tr>
+<tr id=“aTr”>
+
+
+</tr>
+</tbody>
+</table>
+
+
+<script>
+
+	var testData = [1,2,3], x =0;
+
+	while (x < testData.length) {
+		console.log(x);
+
+
+	var ourTable = document.getElementById(“aTr”);
+
+	var createdNode = document.createTextNode(x);
+
+	console.log(ourTable.appendChild(createdNode));
+
+	//[x].gexgContent = x;
+
+		x++;
+
+	}
+
+</script>
