@@ -18,9 +18,8 @@
       <style> table, th, td {
     border: 3px solid #FFCCBC;
     width: 900px;
-    height: 900px;
+    height: 100px;
 }
-
 .dropbtn {
     background-color: black;
     color: white;
@@ -29,16 +28,13 @@
     border: none;
     cursor: pointer;
 }
-
 .dropbtn:hover, .dropbtn:focus {
     background-color: #FFCCBC;
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -47,23 +43,18 @@
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
-
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
-
 .dropdown-content a:hover {background-color: #f1f1f1}
-
 .show {display:block;}
-
 body {
     color: #FF5722;
     background-color: black;
 }
-
       </style>
   </head>
 
@@ -93,43 +84,43 @@ body {
 
 <tr Points>
   <td> <ol> <a href="http://www.espn.com/nba/player/_/id/6585/andre-drummond" title= "Andre Drummond " target="new"> Andre Drummond </a></ol></td>
-  <td> </td>
-  <td> </td>
-  <td> </td>
-  <td> </td>
-  <td> </td>
+  <td>15.6</td>
+  <td>18.3</td>
+  <td>1.2</td>
+  <td>2.0 </td>
+  <td>50.6% </td>
 </tr>
 <tr>
   <td> <ol> <a href="http://www.espn.com/nba/player/_/id/3975/stephen-curry" title= "Stephen Curry " target="new"> Stephen Curry </a></ol></td>
-  <td> </td>
-  <td> </td>
-  <td> </td>
-  <td> </td>
-  <td> </td>
+  <td>5.2</td>
+  <td>29.3</td>
+  <td>5.7</td>
+  <td>0.3</td>
+  <td>50.3%</td>
 </tr>
 <tr>
   <td> <ol> <a href="http://www.espn.com/nba/player/_/id/3012/kyle-lowry" title= "Kyle Lowry" target="new"> Kyle Lowry </a></ol></td>
-  <td> </td>
-  <td> </td>
-  <td> </td>
-  <td> </td>
-  <td> </td>
+  <td>4.4 </td>
+  <td>14.2 </td>
+  <td>10.0 </td>
+  <td>0.4 </td>
+  <td>43.6</td>
 </tr>
 <tr>
   <td> Anthony Davis </td>
-  <td> </td>
-  <td> </td>
-  <td> </td>
-  <td> </td>
-  <td> </td>
+  <td>10.4 </td>
+  <td>28.1 </td>
+  <td>4.7 </td>
+  <td>2.8 </td>
+  <td>50.2</td>
 </tr>
 <tr>
-  <td> Rudy Gobert </td>
-  <td> </td>
-  <td> </td>
-  <td> </td>
-  <td> </td>
-  <td> </td>
+  <td>James Harden</td>
+  <td>5.8 </td>
+  <td>30.9 </td>
+  <td>8.3 </td>
+  <td>0.5 </td>
+  <td>45.4% </td>
 </tr>
 
 </table>
@@ -193,7 +184,6 @@ body {
         var params = {
             // Request parameters
         };
-
         $.ajax({
             url: "https://api.fantasydata.net/v3/nba/stats/{format}/DfsSlatesByDate/{date}?" + $.param(params),
             beforeSend: function(xhrObj){
@@ -214,25 +204,15 @@ body {
 </script>
 
 <script>
-
 	var testData = [1,2,3], x =0;
-
 	while (x < testData.length) {
 		console.log(x);
-
-
 	var ourTable = document.getElementById("aTr");
-
 	var createdNode = document.createTextNode(x);
-
 	console.log(ourTable.appendChild(createdNode));
-
 	//[x].gexgContent = x;
-
 		x++;
-
 	}
-
 </script>
 
 
@@ -242,7 +222,6 @@ body {
         <script>
 // Get the button, and when the user clicks on it, execute myFunction
 document.getElementById("myBtn").onclick = function() {myFunction()};
-
 /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
