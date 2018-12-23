@@ -161,28 +161,27 @@
         <!--<script src="js/scripts.js"></script>-->
 
         <script type="text/javascript">
-            // Simulation -> https://api.fantasydata.net/v3/nfl/scores/JSON/SimulatedScores/5?key=33bbfdd021184014a839908a965065af
-            $(function() {
-              // var fdurl = "https://api.fantasydata.net/v3/nba/stats/{format}/DfsSlatesByDate/{date}?";
-              var fdurl = "https://api.fantasydata.net/v3/nfl/stats/JSON/SimulatedBoxScoresV3/5?";
-              var ocpkey = "33bbfdd021184014a839908a965065af"; // AKA Primary Key
-              var params = { "key": ocpkey, "format": "JSON", "season": "2018" }; // Request paramenters
+            // Simulation -> https://api.fantasydata.net/v3/nfl/scores/JSON/SimulatedScores/5?key=
+            // $(function() {
+            //   // var fdurl = "https://api.fantasydata.net/v3/nba/stats/{format}/DfsSlatesByDate/{date}?";
+            //   var fdurl = "https://api.fantasydata.net/v3/nfl/stats/JSON/SimulatedBoxScoresV3/5?";
+            //   var params = { "key": ocpkey, "format": "JSON", "season": "2018" }; // Request paramenters
 
-              $.ajax({
-                  url: fdurl + $.param(params),
-                  beforeSend: function(xhrObj){
-                    xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", ocpkey); // Request header(s)
-                    // xhrObj.setRequestHeader("Host", "api.fantasydata.net");
-                  },
-                  type: "GET"
-              })
-              .done(function(data) {
-                  alert("Success: " + JSON.stringify(data));
-              })
-              .fail(function(e) {
-                  console.log("Error: "+ e);
-              });
-            });
+            //   $.ajax({
+            //       url: fdurl + $.param(params),
+            //       beforeSend: function(xhrObj){
+            //         xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", ocpkey); // Request header(s)
+            //         // xhrObj.setRequestHeader("Host", "api.fantasydata.net");
+            //       },
+            //       type: "GET"
+            //   })
+            //   .done(function(data) {
+            //       console.log("Success: " + JSON.stringify(data[0]));
+            //   })
+            //   .fail(function(e) {
+            //       console.log("Error: "+ e);
+            //   });
+            // });
         </script>
 
         <script>
