@@ -1,6 +1,6 @@
 <div ondrop="myFunction(event)"></div>
 
-doc.getElementById "table"
+document.getElementById("table");
 
 
 // Create a request variable and assign a new XMLHttpRequest object to it.
