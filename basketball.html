@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title> Stats Attack - Basketball </title>
+
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-        <link href="css/index.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet" />
 
-        <title> Stats Attack- Basketball </title>
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
         <style> 
             body {
@@ -74,7 +74,7 @@
 
     <body>
         <div class="tocenter">
-          <img src="images/logo.png" width= "200" height ="140" alt="" />
+          <img src="images/logo.png" width= "200" height ="140" alt="Stats Attack Logo" />
           <h1> STATS </h1>
         </div>
 
@@ -91,7 +91,8 @@
               </tr>
 
               <tr>
-                  <td> <a href="http://www.espn.com/nba/player/_/id/6585/andre-drummond" title= "Andre Drummond " target="_blank" rel="noopener"> Andre Drummond </a></td>
+                  <td> <a href="http://www.espn.com/nba/player/_/id/6585/andre-drummond" title= "Andre Drummond " target="_blank" rel="noopener"> 
+                        Andre Drummond </a></td>
                   <td> </td>
                   <td> </td>
                   <td> </td>
@@ -99,7 +100,8 @@
                   <td> </td>
               </tr>
               <tr>
-                  <td> <a href="http://www.espn.com/nba/player/_/id/3975/stephen-curry" title= "Stephen Curry " target="_blank" rel="noopener"> Stephen Curry </a></td>
+                  <td> <a href="http://www.espn.com/nba/player/_/id/3975/stephen-curry" title= "Stephen Curry " target="_blank" rel="noopener"> 
+                        Stephen Curry </a></td>
                   <td> </td>
                   <td> </td>
                   <td> </td>
@@ -107,7 +109,8 @@
                   <td> </td>
               </tr>
               <tr>
-                  <td> <a href="http://www.espn.com/nba/player/_/id/3012/kyle-lowry" title= "Kyle Lowry" target="_blank" rel="noopener"> Kyle Lowry </a></td>
+                  <td> <a href="http://www.espn.com/nba/player/_/id/3012/kyle-lowry" title= "Kyle Lowry" target="_blank" rel="noopener"> 
+                        Kyle Lowry </a></td>
                   <td> </td>
                   <td> </td>
                   <td> </td>
@@ -115,7 +118,8 @@
                   <td> </td>
               </tr>
               <tr>
-                  <td> <a href="http://www.espn.com/nba/player/_/id/6583/anthony-davis" title= "Anthony Davis" target="_blank" rel="noopener"> Anthony Davis </a></td>
+                  <td> <a href="http://www.espn.com/nba/player/_/id/6583/anthony-davis" title= "Anthony Davis" target="_blank" rel="noopener"> 
+                        Anthony Davis </a></td>
                   <td> </td>
                   <td> </td>
                   <td> </td>
@@ -123,7 +127,8 @@
                   <td> </td>
               </tr>
               <tr>
-                  <td> <a href="http://www.espn.com/nba/player/_/id/3032976/rudy-gobert" title= "Rudy Gobert" target="_blank" rel="noopener"> Rudy Gobert </a></td>
+                  <td> <a href="http://www.espn.com/nba/player/_/id/3032976/rudy-gobert" title= "Rudy Gobert" target="_blank" rel="noopener"> 
+                        Rudy Gobert </a></td>
                   <td> </td>
                   <td> </td>
                   <td> </td>
@@ -132,6 +137,7 @@
               </tr>
           </table>
         </section>
+
         <!-- <div class="toleft">
             <img src="https://clutchpoints.com/wp-content/uploads/2018/03/Dirk_Nowitzki_becomes_first_ever_to_play_at_least_75_games_in_20th_season_of_career.jpg" width= "435" height ="auto"alt="" />
         </div>
@@ -140,7 +146,7 @@
 
          <div class="toright">
               <img src="https://sportshub.cbsistatic.com/i/r/2018/10/29/ede9ec00-669e-4ff4-a9fb-ad6afdea847f/thumbnail/770x433/2317f7855c38fc3b0cd2f5ae5f702052/lebron-james-lakers.jpg" width= "435" height ="auto" alt="" /> -->
-        </div>
+        <!-- </div> -->
        
         <footer class="tocenter">
           <!-- <div class="dropdown">
@@ -161,27 +167,38 @@
         <!--<script src="js/scripts.js"></script>-->
 
         <script type="text/javascript">
-            // Simulation -> https://api.fantasydata.net/v3/nfl/scores/JSON/SimulatedScores/5?key=
-            // $(function() {
-            //   // var fdurl = "https://api.fantasydata.net/v3/nba/stats/{format}/DfsSlatesByDate/{date}?";
-            //   var fdurl = "https://api.fantasydata.net/v3/nfl/stats/JSON/SimulatedBoxScoresV3/5?";
-            //   var params = { "key": ocpkey, "format": "JSON", "season": "2018" }; // Request paramenters
+            // var fdurl = "https://api.fantasydata.net/v3/nba/stats/{format}/DfsSlatesByDate/{date}?";
+             $(function() {
+                function nbaData() {
+                    // var fdurl = "https://api.fantasydata.net/v3/nba/stats/{format}/DfsSlatesByDate/{date}?";
+                    var fdurl = "https://api.fantasydata.net/v3/nba/stats/JSON/AllStars/2018";
+                    var params = { "key": ocpkey, "format": "JSON", "season": "2018" }; // Request paramenters
 
-            //   $.ajax({
-            //       url: fdurl + $.param(params),
-            //       beforeSend: function(xhrObj){
-            //         xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", ocpkey); // Request header(s)
-            //         // xhrObj.setRequestHeader("Host", "api.fantasydata.net");
-            //       },
-            //       type: "GET"
-            //   })
-            //   .done(function(data) {
-            //       console.log("Success: " + JSON.stringify(data[0]));
-            //   })
-            //   .fail(function(e) {
-            //       console.log("Error: "+ e);
-            //   });
-            // });
+                    $.ajax({
+                        url: fdurl + $.param(params),
+                        beforeSend: function(xhrObj){
+                          xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", ocpkey); // Request header(s)
+                        },
+                        type: "GET"
+                    })
+                    .done(function(data) {
+                        console.log("Success: " + JSON.stringify(data[0]));
+                    })
+                    .fail(function(e) {
+                        console.log("Error: "+ e);
+                    });
+                }
+            });
+
+             /* Example of a result
+              {
+                "PlayerID": 20000574,
+                "Name": "Kyrie Irving",
+                "TeamID": 31,
+                "Team": "EAST",
+                "Position": "Scrambled"
+              }
+             */
         </script>
 
         <script>
