@@ -1,19 +1,13 @@
 "use strict";
 
 $(function() {       
-    // Get the button, and when the user clicks on it, execute myFunction
-    document.getElementById("myBtn").onclick = function() {myFunction()};
-
-    /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
- 
     // var fdurl = "https://api.fantasydata.net/v3/nba/stats/{format}/DfsSlatesByDate/{date}?";
     function nbaData() {
         // var fdurl = "https://api.fantasydata.net/v3/nba/stats/{format}/DfsSlatesByDate/{date}?";
         var fdurl = "https://api.fantasydata.net/v3/nba/stats/JSON/AllStars/2018";
-        var params = { "key": ocpkey, "format": "JSON", "season": "2018" }; // Request paramenters
+        var ocpkey      = "PLUG IN YOUR KEY IN THIS STRING"; // Ex. var ocpkey = "123456789098765432123456";
+        var params = { "format": "JSON", "season": "2018" }; // Request paramenters
+        var finalData = "";
 
         $.ajax({
             url: fdurl + $.param(params),

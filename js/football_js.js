@@ -1,14 +1,6 @@
 "use strict";
 
 $(function() {      
-    // Get the button, and when the user clicks on it, execute myFunction
-    document.getElementById("myBtn").onclick = function() {myFunction()};
-
-    /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
-    
     function nflData() {
         var fdurl       = "https://api.fantasydata.net/v3/nfl/stats/json/player/";
         var playerID    = [18878, 13337, 12109, 17960, 15126]; // PLUG IN ANY 5 PLAYER IDS IN THIS ARRAY. THESE 5 ARE EXAMPLES
@@ -26,7 +18,7 @@ $(function() {
               type: "GET"
             })
             .done(function(data) {
-              var domElFinder = "table#football_table tbody tr#player" + playerArrIndex + " td:first";
+              var domElFinder = "table#football_table tr#player" + playerArrIndex + " td:first";
               var playerName = "<span>"+ data["FirstName"] + " " + data["LastName"] + "</span>"
               var tableForData = $(domElFinder);
               tableForData.append( playerName );
