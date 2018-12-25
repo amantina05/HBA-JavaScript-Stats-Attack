@@ -11,9 +11,7 @@ Example of response from API call for NFL player details by player, with the pla
 https://api.fantasydata.net/v3/nfl/stats/{format}/Player/{playerid} <- Format: JSON (recommended), playerid: 15126
 
 ```
-
 		{
-		
 		  "PlayerID": 15126,
 		  "Team": "DET",
 		  "Number": 25,
@@ -89,6 +87,6 @@ https://api.fantasydata.net/v3/nfl/stats/{format}/Player/{playerid} <- Format: J
 		  "PlayerSeason": null,
 		  "LatestNews": []
 		}
-		```
+```
 
 ---
