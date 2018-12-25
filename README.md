@@ -9,8 +9,11 @@ Ex: Google search -> fantasy data Theo Riddick
 ---
 Example of response from API call for NFL player details by player, with the playerID as a parameter:
 https://api.fantasydata.net/v3/nfl/stats/{format}/Player/{playerid} <- Format: JSON (recommended), playerid: 15126
-		```
+
+```
+
 		{
+		
 		  "PlayerID": 15126,
 		  "Team": "DET",
 		  "Number": 25,
