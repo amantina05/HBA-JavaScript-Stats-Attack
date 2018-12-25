@@ -7,69 +7,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-        <link href="css/index.css" rel="stylesheet" />
+        <link href="css/allscripts.css" rel="stylesheet" />
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-        <style> 
-            table, th, td {
-            border: 3px solid #DCEDC8;
-            width: 900px;
-            height:;
-            }
-
-
-            .toleft { text-align: left; }
-            .tocenter { text-align: center; }
-            .toright { text-align: right; }
-
-            .dropbtn {
-            background-color: black;
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-            }
-
-            .dropbtn:hover, .dropbtn:focus {
-            background-color: #DCEDC8;
-            }
-
-            .dropdown {
-            position: relative;
-            display: inline-block;
-            }
-
-            .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            overflow: auto;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            }
-
-            .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            }
-
-            .dropdown-content a:hover {background-color: #f1f1f1}
-
-            .show {display:block;}
-
-            body {
-            color: #8BC34A;
-            background-color: black;
-            }
-        </style>
     </head>
 
-    <body>
+    <body id="football">
         <div class="tocenter">
           <img src="images/logo.png" width= "200" height ="140" alt="Stats Attack Logo" />
           <h1> STATS </h1>
@@ -77,108 +21,56 @@
 
 
         <section>
-          <table id="table">
+          <table id="football_table">
             <tbody>
-              <tr>
-                  <th>Players</th> <th>Recieving Yards Per Game </th> <th>Rushing Yards Per Game </th> <th>Receptions</th> <th>Recieving TD's</th> <th colspan="2"> Rushing TD's</th>
+              <tr><th>Players</th>      <th>Recieving Yards Per Game </th>  <th>Rushing Yards Per Game </th> 
+                  <th>Receptions</th>   <th>Recieving TD's</th>             <th colspan="2"> Rushing TD's</th>
               </tr>
+              <tr id="player0"> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
               <tr id="player1"> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
               <tr id="player2"> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
               <tr id="player3"> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
               <tr id="player4"> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
-              <tr id="player5"> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
             </tbody>
           </table>
         </section>
 
-        <!-- <div class="toleft">
-          <img src="footballpic1.jpg" width= "335" height ="auto" alt="" />
+        <div class="toleft">
+          <img src="images/footballpic1.jpg" width= "335" height ="auto" alt="" />
         </div>
 
-        <img src="footballpic2.jpg" width= "335" height ="auto" alt="" />
+        <img src="images/footballpic2.jpg" width= "335" height ="auto" alt="" />
 
         <div class="toright">
-          <img src="footballpic3.jpg" width= "335" height ="auto" alt="" />
+          <img src="images/footballpic3.jpg" width= "335" height ="auto" alt="" />
+        </div>
+
+
+        <div class="tocenter dropdown">
+          <button id="myBtn" class="indropbtn">Dropdown</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href= "index.html" title= "Home"> Home </a>
+            <span class="navigationSpace"/>
+            <br>
+            <a href= "basketball.html" title= "Basketball"> Basketball </a>
+            <span class="navigationSpace"/>
+            <br>
+            <a href= "football.html" title= "Football"> Football </a>
+            <span class="navigationSpace"/>
+            <br>
+            <a href= "index.html" title= "Contact"> Contact </a>
+            <span class="navigationSpace"/>
+          </div>
         </div>
 
         <footer class="tocenter">
-            <div class="dropdown">
-              <button id="myBtn" class="dropbtn">Dropdown</button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href= "index.html" title= "Home"> Home </a>
-                <span class="navigationSpace"/>
-                <br />
-                <a href= "index2.html" title= "Basketball"> Basketball </a>
-                <span class="navigationSpace"/>
-                <br />
-                <a href= "index3.html" title= "Football"> Football </a>
-                <span class="navigationSpace"/>
-                <br />
-                <a href= "index.html" title= "Contact"> Contact </a>
-                <span class="navigationSpace"/>
-              </div>
-            </div>
-        </footer> -->
+            <h5> OUR INFO </h5>
+            <p> Roshawn Smith
+            email: rosmith5659@gmail.com </p>
+            <p> Tina Sosa
+            email: amantinasosa@gmail.com </p>
+        </footer>
 
-        <script>
-            // Get the button, and when the user clicks on it, execute myFunction
-            // document.getElementById("myBtn").onclick = function() {myFunction()};
-
-            /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
-            // function myFunction() {
-              // document.getElementById("myDropdown").classList.toggle("show");
-            // }
-        //</script>
-
-        <script type="text/javascript">
-            // console.log("1");
-
-            function nflData() {
-                // Simulation -> https://api.fantasydata.net/v3/nfl/scores/JSON/SimulatedScores/5?key=
-                /*
-                Alvin Kamara   <- 18878
-                Mark Ingram    <- 13337
-                Ted Ginn       <- 12109
-                Michael Thomas <- 17960
-                Theo Riddick   <- 15126
-                */
-                var fdurl       = "https://api.fantasydata.net/v3/nfl/stats/json/player/";
-                var playerID    = [18878, 13337, 12109, 17960, 15126];
-                var ocpkey      = "33bbfdd021184014a839908a965065af";
-                var placeholder = 0;
-
-
-              // Where the real fun begins!
-                while (placeholder <= 4){ 
-                    // console.log(placeholder + ": " + playerID[placeholder]);
-                    // Request paramenters -> var params = { "format": "json", "playerid": playerID[placeholder] }; 
-
-                    $.ajax({
-                      url: fdurl + playerID[placeholder],
-                      beforeSend: function(xhrObj){
-                        xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", ocpkey); // Request header(s)
-                      },
-                      type: "GET"
-                    })
-                    .done(function(data) {
-                      placeholder++;
-
-                      // var tableForData = $("table#table tbody tr:nth-child(2) td" + (placeholder + 2));
-                      // tableForData.append( "<span>"+ data["FirstName"] + " " + data["LastName"] + "</span>" );
-                      var stuff = "tr#player" + placeholder + " td:nth-child(1)";
-                      console.log(stuff);
-                      var tableForData = $(stuff);
-
-                      tableForData.append("<span>"+ data["FirstName"] + " " + data["LastName"] + "</span>");
-                    })
-                    .fail(function(e) {
-                      console.log("Error: "+ e);
-                    });
-                }
-            }
-
-            nflData();
-            // console.log("2");
-        </script>
+        <script src="js/football_js.js"></script>
     </body>
 </html>

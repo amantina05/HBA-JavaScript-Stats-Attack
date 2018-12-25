@@ -7,7 +7,7 @@ Remember: To find a player's id you need to Google "Fantasy data {player first n
 Ex: Google search -> fantasy data Theo Riddick
 
 ---
-Example of response from API call for player details by player, with the playerID as a parameter:
+Example of response from API call for NFL player details by player, with the playerID as a parameter:
 https://api.fantasydata.net/v3/nfl/stats/{format}/Player/{playerid} <- Format: JSON (recommended), playerid: 15126
 		'''
 		{

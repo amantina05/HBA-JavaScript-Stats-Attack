@@ -1,40 +1,14 @@
-<div ondrop="myFunction(event)"></div>
+"use strict";
 
-document.getElementById("table");
+$(function() {   
+	var finalData = "";
 
+	// Get the button, and when the user clicks on it, execute myFunction
+	document.getElementById("myBtn").onclick = function() {myFunction()};
 
-// Create a request variable and assign a new XMLHttpRequest object to it.
-var request = new XMLHttpRequest();
-
-// Open a new connection, using the GET request on the URL endpoint
-request.open('GET', 'https://api.fantasydata.net/v3/nba/stats/JSON/AllStars/2017', true);
-
-request.onload = function () {
-  // Begin accessing JSON data here
-  }
-}
-
-// Send request
-request.send();
-
-// Begin accessing JSON data here
-var data = JSON.parse(this.response);
-
-data.forEach(movie => {
-  // Log each movie's title
-  console.log(movie.title);
+	/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+	function myFunction() {
+	  document.getElementById("myDropdown").classList.toggle("show");
+	}
 });
 
-// Begin accessing JSON data here
-var data = JSON.parse(this.response);
-
-if (request.status >= 200 && request.status < 400) {
-  data.forEach(movie => {
-    console.log(movie.title);
-  });
-} else {
-  console.log('error');
-}
-
-
-const app = document.getElementById('table');
